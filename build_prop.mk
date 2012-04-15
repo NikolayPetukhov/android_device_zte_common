@@ -1,8 +1,5 @@
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240 \
-    ro.sf.hwrotation=180 \
-    qemu.sf.lcd_density=240 \
     ro.media.dec.jpeg.memcap=20000000 \
     ro.opengles.version=131072 \
     persist.sys.use_dithering=1
