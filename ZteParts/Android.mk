@@ -14,6 +14,8 @@ else ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),blade)
 include $(BUILD_PACKAGE)
 else ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),blade2)
 include $(BUILD_PACKAGE)
+else ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),v9)
+include $(BUILD_PACKAGE)
 endif
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

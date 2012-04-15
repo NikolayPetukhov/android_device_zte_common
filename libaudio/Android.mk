@@ -27,6 +27,9 @@ include $(BUILD_SHARED_LIBRARY)
 else ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),blade2)
 LOCAL_MODULE := audio_policy.blade2
 include $(BUILD_SHARED_LIBRARY)
+else ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),v9)
+LOCAL_MODULE := audio_policy.v9
+include $(BUILD_SHARED_LIBRARY)
 endif
 
 include $(CLEAR_VARS)
@@ -62,5 +65,8 @@ LOCAL_MODULE := audio.primary.blade
 include $(BUILD_SHARED_LIBRARY)
 else ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),blade2)
 LOCAL_MODULE := audio.primary.blade2
+include $(BUILD_SHARED_LIBRARY)
+else ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),v9)
+LOCAL_MODULE := audio.primary.v9
 include $(BUILD_SHARED_LIBRARY)
 endif
